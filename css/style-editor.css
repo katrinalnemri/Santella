@@ -1,0 +1,32 @@
+/*
+Theme Name: Santella
+Theme URI: https://www.demo.fourcones.com/santella
+Author: Kate
+Author URI: https://www.fourcones.com
+Description: Responsive premade WordPress blog theme.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: santella
+Tags: wordpress, wordpress themes, wordpress theme, wordpress template, blog theme, blog template, responsive wordpress
+*/
+
+body {
+    background-color: #d3ebf3;
+    color: #00005d;
+}
+
+/* Main column width */
+.wp-block {
+    max-width: 720px;
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align='wide'] {
+    max-width: 1080px;
+}
+
+/* Width of "full-wide" blocks */
+.wp-block[data-align='full'] {
+    max-width: none;
+}

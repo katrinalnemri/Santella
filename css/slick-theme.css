@@ -1,0 +1,141 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+}
+/* Arrows */
+
+.prev-slide{
+	left:35%;
+}
+.next-slide{
+	right:35%;
+}
+.prev-slide,
+.next-slide{
+    position: absolute;
+    bottom: -13px;
+    display: block;
+    padding: 0;
+	font-size:21px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+	z-index: 9;
+width:35px;
+height:35px;
+	line-height:35px;
+	text-align:center;
+border-radius:100%;
+box-shadow:0px 0px 14px -10px #000;
+visibility:visible;
+}
+.prev-slide:hover,
+.prev-slide:focus,
+.next-slide:hover,
+.next-slide:focus
+{
+    outline: none;
+}
+
+[dir='rtl'] .prev-slide
+{
+    right: 35%;
+    left: auto;
+}
+[dir='rtl'] .next-slide
+{
+    right: auto;
+    left: 35%;
+}
+
+/* Dots */
+.slick-dotted.slick-slider{
+  margin-bottom:20px;
+}
+
+.slick-dots
+{
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 3px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-size: 11px;
+    line-height: 30px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 30px;
+    height: 30px;
+
+    content: '\f111';
+	font-family:'Font Awesome 5 Free';
+		font-weight:900;
+    text-align: center;
+
+    opacity: .25;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+}
